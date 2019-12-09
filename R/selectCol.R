@@ -41,7 +41,7 @@ selectCol <- function() {
                    ),
                    mainPanel(style = "overflow-y:scroll; max-height: 650px; position:relative;",
                              h3("Data Table"),br(),
-                             shiny::dataTableOutput("table_1", width = "95%", height = "auto"),
+                             DT::DTOutput("table_1", width = "95%", height = "auto"),
                              h3(icon("code"),"Code"),
                              htmlOutput("code"),
                    ),
@@ -67,7 +67,7 @@ selectCol <- function() {
     })
 
     options(DT.TOJSON_ARGS = list(na = 'string'))
-    output$table_1 <- shiny::renderDataTable(datatable(data(),
+    output$table_1 <- DT::renderDT(datatable(data(),
                                                  class = 'display compact nowrap',
                                                  filter = list(position = 'top', plain = TRUE,clear = FALSE),
                                                  extensions = c('Scroller','FixedColumns','Buttons'), # ColReorder
