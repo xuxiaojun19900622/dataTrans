@@ -6,6 +6,7 @@
 #' @import miniUI
 #' @import shinyjqui
 #' @import plotly
+#' @import tableone
 
 asFactor <- function() {
 
@@ -148,7 +149,8 @@ asFactor <- function() {
     })
 
     output$summary <- renderPrint({
-      summary(rvar())
+      # summary(rvar())
+      print(CreateTableOne(data = rvar(), includeNA = T))
     })
 
     observeEvent(input$done, {
