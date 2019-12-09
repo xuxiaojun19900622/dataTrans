@@ -4,7 +4,7 @@
 #' @return none
 #' @import shiny
 #' @import miniUI
-#' @importFrom DT DTOutput renderDT datatable dataTableProxy
+#' @importFrom DT DTOutput renderDT datatable dataTableProxy replaceData
 #' @import dplyr
 #' @import shinyjqui
 
