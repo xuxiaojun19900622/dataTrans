@@ -1,0 +1,14 @@
+Name: Data Summary
+Description: View and plot data.frame.
+Binding: dataView
+Interactive: true
+
+Name: Select Variables
+Description: Select and reorder variables of data frames.
+Binding: selectCol
+Interactive: true
+
+Name: Factor Recorder
+Description: Wrangling categorical data as factor.
+Binding: asFactor
+Interactive: true
