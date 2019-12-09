@@ -4,15 +4,10 @@
 #' @return none
 #' @import shiny
 #' @import miniUI
-#' @import DT
+#' @importFrom DT DTOutput renderDT
 #' @import dplyr
 #' @import shinyjqui
 
-# library(shiny)
-# library(miniUI)
-# library(DT)
-# library(dplyr)
-# library(shinyjqui)
 
 selectCol <- function() {
 

@@ -4,7 +4,7 @@
 #' @return none
 #' @import shiny
 #' @import miniUI
-#' @import DT
+#' @importFrom DT DTOutput renderDT
 #' @import plotly
 
 dataView <- function() {
